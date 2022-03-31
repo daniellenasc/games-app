@@ -1,8 +1,14 @@
 //create the Header component as function
 export function Header() {
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
+    <header>
+      <div>
+        <img
+          src="https://www.thesportsdb.com/images/media/league/logo/4c377s1535214890.png"
+          alt="english premier league logo"
+          className="header-img"
+        />
+      </div>
+    </header>
   );
 }
