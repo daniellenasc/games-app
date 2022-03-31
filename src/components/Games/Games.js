@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 //import axios - a promise-based HTTP Client for node.js and the browser.
 import axios from "axios";
 
+//import the function convertDate
+import { convertDate } from "../../assets/functions/concertDate";
+
 //create component Games as function - to render the API data
 export function Games() {
   //declare a state
@@ -36,7 +39,7 @@ export function Games() {
                 src="https://www.thesportsdb.com/images/icons/calendar-next.png"
                 alt="calendar"
               />
-              {currentGame.dateEvent}
+              {convertDate(currentGame.dateEvent)}
             </div>
             <div>{currentGame.strHomeTeam}</div>
             <div>{currentGame.intHomeScore}</div>
