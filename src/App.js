@@ -1,4 +1,5 @@
 import "./App.css";
+import { Footer } from "./components/Footer/Footer";
 import { Games } from "./components/Games/Games";
 import { Header } from "./components/Header/Header";
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <Games />
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,12 @@
 /* global style */
 * {
   margin: 0px;
+  font-family: sans-serif;
   background-color: #05220b;
+}
+
+.App {
+  text-align: center;
 }
 
 /* header style */
@@ -19,6 +24,14 @@ header {
   width: 200px;
 }
 
-.App {
-  text-align: center;
+/* footer style */
+footer {
+  margin: 15px;
+  padding: 15px;
+}
+
+/* footer-link style */
+footer a {
+  color: white;
+  text-decoration: none;
 }
