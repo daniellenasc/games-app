@@ -1,25 +1,26 @@
+//criate a function to convert the data to 'Day Month Year':
 export function convertDate(dateStr) {
-  const monthPtBr = [
+  const monthEn = [
     "Jan",
-    "Fev",
+    "Feb",
     "Mar",
-    "Abr",
-    "Mai",
+    "Apr",
+    "May",
     "Jun",
     "Jul",
-    "Ago",
-    "Set",
-    "Out",
+    "Aug",
+    "Sep",
+    "Oct",
     "Nov",
-    "Dez",
+    "Dec",
   ];
-  const date = new Date(dateStr);
-  const day = date.getDate();
-  const month = date.getMonth();
-  const year = date.getFullYear();
+  const date = new Date(dateStr); //Date() constructor
+  const day = date.getDate(); //getDate() method returns the day of the month in the parameter 'dateStr'
+  const month = date.getMonth(); //getMonth() method returns the month in the parameter 'dateStr'
+  const year = date.getFullYear(); //getFullYear() method returns the year in the parameter 'dateStr'
   let phrase = "";
 
-  phrase = `${day + 1} ${monthPtBr[month]} ${year}`;
+  phrase = `${day} ${monthEn[month]} ${year}`;
 
   return phrase;
 }
