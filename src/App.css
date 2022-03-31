@@ -4,6 +4,21 @@
   background-color: #05220b;
 }
 
+/* header style */
+header {
+  height: 200px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* header image style - className */
+.header-img {
+  width: 200px;
+}
+
 .App {
   text-align: center;
 }
