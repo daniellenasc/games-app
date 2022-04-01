@@ -24,23 +24,28 @@ header {
   width: 200px;
 }
 
+h1 {
+  color: white;
+}
+
 /* card-game style - className */
 .card-game {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
   justify-content: space-evenly;
   color: white;
-  border: 2px solid red;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgb(255 254 254 / 25%);
   border-radius: 9px;
-  margin: 20px;
+  margin: 25px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .game-image-container {
-  padding: 10px;
-  border: 2px solid blue;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* card-game image style - className */
@@ -54,7 +59,6 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 10px 10px 0px;
-  border: 2px solid blue;
 }
 
 .card-game-date {

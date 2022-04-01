@@ -32,6 +32,7 @@ export function Games() {
 
   return (
     <div>
+      <h1>Latest Results</h1>
       {/* using the .map() method in the return to create a new array populated with the results of calling a provided function on every element in the calling array. */}
       {game.map((currentGame, index) => {
         return (
