@@ -21,7 +21,7 @@ export function Games() {
           //using Axios - a promise-based HTTP Client for node.js and the browser - fot the get HTTP request
           "https://www.thesportsdb.com/api/v1/json/2/eventsseason.php?id=4328&s=2021-2022"
         );
-        console.log("Result: ", result.data.events); //to show what the variable is returning
+        //console.log("Result: ", result.data.events); //to show what the variable is returning
         setGame([...result.data.events]); //to update the state we call the state updater pass it the new value.
       } catch (error) {
         console.error(error);
