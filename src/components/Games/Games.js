@@ -32,9 +32,11 @@ export function Games() {
 
   return (
     <div>
-      {game.map((currentGame) => {
+      {/* using the .map() method in the return to create a new array populated with the results of calling a provided function on every element in the calling array. */}
+      {game.map((currentGame, index) => {
         return (
-          <div key={currentGame.idEvent}>
+          <div key={index}>
+            {/*  the .map() method asks for a unique key to each child in a list*/}
             <div>
               <img
                 src="https://www.thesportsdb.com/images/icons/calendar-next.png"
