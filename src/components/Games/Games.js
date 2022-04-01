@@ -35,21 +35,33 @@ export function Games() {
       {/* using the .map() method in the return to create a new array populated with the results of calling a provided function on every element in the calling array. */}
       {game.map((currentGame, index) => {
         return (
-          <div key={index}>
-            {/*  the .map() method asks for a unique key to each child in a list*/}
-            <div>
+          <div key={index} className="card-game">
+            <div className="game-image-container">
               <img
-                src="https://www.thesportsdb.com/images/icons/calendar-next.png"
-                alt="calendar"
+                src={currentGame.strThumb}
+                alt={currentGame.strEvent}
+                className="game-image"
               />
-              {convertDate(currentGame.dateEvent)}
             </div>
-            <div>{currentGame.strHomeTeam}</div>
-            <div>{currentGame.intHomeScore}</div>
-            <div> - </div>
-            <div>{currentGame.intAwayScore}</div>
-            <div>{currentGame.strAwayTeam}</div>
-            <div>Where: {currentGame.strVenue}</div>
+            <div className="card-game-body">
+              <div className="card-game-date">
+                <img
+                  src="https://www.thesportsdb.com/images/icons/calendar-next.png"
+                  alt="calendar"
+                />
+                {convertDate(currentGame.dateEvent)}
+              </div>
+              <div className="card-game-result">
+                <h3>{currentGame.strHomeTeam}</h3>
+                <h3>{currentGame.intHomeScore}</h3>
+                <h3> X </h3>
+                <h3>{currentGame.intAwayScore}</h3>
+                <h3>{currentGame.strAwayTeam}</h3>
+              </div>
+              <div className="card-game-where">
+                Where: {currentGame.strVenue}
+              </div>
+            </div>
           </div>
         );
       })}
