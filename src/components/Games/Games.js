@@ -12,15 +12,16 @@ export function Games() {
   //declare a state
   const [game, setGame] = useState([]);
 
-  //Effect Hook) to run side effects (data fetching)
+  //Effect Hook to run side effects (data fetching)
   useEffect(() => {
     async function fetchGames() {
       //the function must be asynchronous as it will have to wait for the database response
       try {
         const result = await axios.get(
+          //using Axios - a promise-based HTTP Client for node.js and the browser - fot the get HTTP request
           "https://www.thesportsdb.com/api/v1/json/2/eventsseason.php?id=4328&s=2021-2022"
         );
-        console.log("Result: ", result); //to show what the variable is returning
+        console.log("Result: ", result.data.events); //to show what the variable is returning
         setGame([...result.data.events]); //to update the state we call the state updater pass it the new value.
       } catch (error) {
         console.error(error);
