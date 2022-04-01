@@ -52,15 +52,12 @@ export function Games() {
                 {convertDate(currentGame.dateEvent)}
               </div>
               <div className="card-game-result">
-                <h3>{currentGame.strHomeTeam}</h3>
-                <h3>{currentGame.intHomeScore}</h3>
-                <h3> X </h3>
-                <h3>{currentGame.intAwayScore}</h3>
-                <h3>{currentGame.strAwayTeam}</h3>
+                <h3>
+                  {currentGame.strHomeTeam} {currentGame.intHomeScore} X{" "}
+                  {currentGame.intAwayScore} {currentGame.strAwayTeam}
+                </h3>
               </div>
-              <div className="card-game-where">
-                Where: {currentGame.strVenue}
-              </div>
+              <div className="card-game-where">{currentGame.strVenue}</div>
             </div>
           </div>
         );
