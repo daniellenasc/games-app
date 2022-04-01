@@ -26,49 +26,58 @@ header {
 
 h1 {
   color: white;
+  text-shadow: rgb(255, 255, 255, 0.25);
 }
 
 /* card-game style - className */
 .card-game {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: center;
   color: white;
-  box-shadow: 4px 4px 4px rgb(255 254 254 / 25%);
-  border-radius: 9px;
+  box-shadow: 4px 4px 4px rgb(255, 255, 255, 0.25);
+  border-radius: 30px;
   margin: 25px;
   flex-wrap: wrap;
   align-items: center;
 }
 
+/* card-game image container style - className */
 .game-image-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 200px;
+  margin: 15px;
 }
 
 /* card-game image style - className */
 .game-image {
-  width: 150px;
-  height: 100px;
+  width: 200px;
+  height: 150px;
 }
 
+/* card-game body style - className */
 .card-game-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 10px 10px 0px;
+  width: 300px;
+  margin: 15px;
 }
 
+/* card-game date style - className */
 .card-game-date {
   padding: 10px;
 }
 
+/* card-game result style - className */
 .card-game-result {
   padding: 10px;
 }
 
+/* card-game whete style - className */
 .card-game-where {
   padding: 10px;
 }
